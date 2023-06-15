@@ -1,0 +1,284 @@
+ /* Author : MOHIT JANGID  */
+
+
+/* inport font style for title not found */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap'); 
+/* inport font style for description(left section style) */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+/* inport font style for footer author information*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+/* Main Body of Not Found Page Styling */
+
+.not-found-title{
+    padding-top: 40px; 
+    padding-left: 77px;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.not-found-page{
+    width: 100vw;
+    height:85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.right-not-found-section {
+    width: 48vw;
+    min-width: 540px;
+    height: 100%;
+
+}
+
+
+.image{
+    margin-top:200px;
+    margin-left:77px;
+}
+
+
+#scarecrow-img{
+    height: 448px;
+    width:540px ;
+}
+
+/* left section styling */
+
+.left-not-found-section{
+    width: 49vw;
+    min-width: 540px;
+    height: 100%;
+
+}
+
+ .center-left-section{
+margin-top: 200px;
+margin-left: 77px;
+} 
+
+.not-found-heading{
+    width: 586px;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+}
+.not-found-para{
+    font-family: 'Space Mono' , monospace;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    width: 381px;
+    color: #4F4F4F;
+    margin: 36px 0px; 
+}
+#submit-btn{
+    margin: 36px 0px;
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    font-family: 'Space Mono' , monospace;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: -0.035em;
+    color: hsl(0, 0%, 100%);
+}
+
+#submit-btn:hover{
+    background-color: #fff;
+    color: #333;
+    border: 4px double #333;
+}
+#submit-btn:active{
+    scale: 0.95;
+}
+/* author detials */
+.author{
+    margin-top: 20px;
+    font-family: Montserrat , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+
+}
+.author>a{
+color: #BDBDBD;
+text-decoration: none;
+}
+.author>a:hover{
+    text-decoration: underline;
+}
+
+
+/* Responsive for mobile devices */
+
+
+/* @media screen and (max-width:580px) { */
+@media screen and (max-width:800px) {
+
+    /* title */
+    .not-found-title{
+        padding-top: 20px;
+        padding-left: 24px;
+    }
+
+    .not-found-page{
+        height:auto;
+    }
+    /* right section */
+    .right-not-found-section {
+        min-width:100vw;
+        /* max-width: 586px; */
+    }
+    .image{
+        margin-top: 64px;
+        margin-left: 44px;
+
+    }
+   
+    #scarecrow-img{
+        height: 238px;
+        width:286px ;
+    }
+
+    /* left section */
+    .left-not-found-section {
+        min-width:100vw;
+        /* max-width: 586px; */
+
+    }
+    .center-left-section{
+        margin-top: 76px;
+        margin-left: 24px;
+        width:350px
+    }
+    .not-found-heading{
+        width:350px;
+        font-size: 48px;
+        line-height: 71px;
+    }
+    .not-found-para{
+        width:328px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .author{
+        margin-top: 114px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .image{
+        margin-top: 64px;
+        margin-left: 44px;
+        scale: 0.95;
+
+    }
+    .center-left-section{
+        margin-top: 76px;
+        margin-left: 14px;
+        width:100%;
+    }
+    .not-found-heading{
+        width:100%;
+        font-size: 44px;
+        line-height: 71px;
+    }
+    .not-found-para{
+        width:100%;
+        word-break: break-all ;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:800px){
+    .image{
+        scale: 1;
+        margin-top: 50px !important;
+    }
+    .center-left-section{
+        scale: 0.9;
+
+    }
+}
+
+
+@media screen and (min-width:700px) and (max-width:1200px){
+
+        /* title */
+        .not-found-title{
+            padding-top: 20px;
+            padding-left: 24px;
+        }
+    
+        .not-found-page{
+            height:auto;
+        }
+        /* right section */
+        .right-not-found-section {
+            min-width:50vw;
+            max-width: 586px;
+        }
+        .image{
+            margin-top: 200px;
+            margin-left: 77px;
+        }
+        
+        #scarecrow-img{
+            scale: 1.4;
+            height: 238px;
+            width:286px ;
+        }
+    
+        /* left section */
+        .left-not-found-section {
+            min-width:49vw;
+            max-width: 586px;
+    
+        }
+        .center-left-section{
+            margin-top: 76px;
+            margin-left: 24px;
+            width:350px
+        }
+        .not-found-heading{
+            width:350px;
+            font-size: 48px;
+            line-height: 71px;
+        }
+        .not-found-para{
+            width:328px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .author{
+            margin-top: 114px;
+        }
+
+}
